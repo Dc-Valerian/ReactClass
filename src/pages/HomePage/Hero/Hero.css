@@ -1,0 +1,45 @@
+.container {
+  background-image: url("../../../images/classhero.png");
+  height: 500px;
+  background-size: contain;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.containerHolder {
+  background-color: #fff3e3;
+  height: 300px;
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+
+  h1 {
+    font-size: 60px;
+    color: #b88e2f;
+    margin: 0;
+    line-height: 60px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button {
+    background-color: #b88e2f;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+}

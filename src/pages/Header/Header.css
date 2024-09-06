@@ -1,0 +1,89 @@
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerWrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlinks {
+  display: flex;
+  gap: 30px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.links:hover {
+  color: red;
+}
+
+.iconHolder {
+  display: flex;
+  gap: 40px;
+}
+
+.icons {
+  font-size: 20px;
+}
+
+.icons:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.button {
+  font-size: 30px;
+  display: none;
+  margin-left: auto; /* Pushes the button to the right end */
+}
+
+.mobile-navlinks {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .headerWrapper {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  .navlinks,
+  .iconHolder {
+    display: none;
+  }
+
+  .button {
+    font-size: 30px;
+    display: flex;
+    margin-left: auto; 
+    
+  }
+
+  .mobile-container {
+    background-color: green;
+    width: 90%; /* Updated to 90% width */
+    position: relative;
+    top: 90px;
+    right: 0;
+  }
+
+  .mobile-navlinks {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Ensure it fills the mobile container */
+    height: 80%;
+  }
+}

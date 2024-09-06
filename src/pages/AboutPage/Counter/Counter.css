@@ -1,0 +1,38 @@
+.counter-session {
+  background-color: peru;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+button {
+  background-color: cyan;
+  height: 30px;
+  width: 40px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.active-btn {
+  background-color: green;
+}
+
+.disabled-btn {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+}
+
+.disabled-btn:hover {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+}
